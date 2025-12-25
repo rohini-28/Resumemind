@@ -27,9 +27,12 @@ interface AccordionProps {
     className?: string;
 }
 
-export const Accordion: React.FC<AccordionProps> = ({ children,defaultOpen,
-allowMultiple = false,
-className = "", }) => {
+export const Accordion: React.FC<AccordionProps> = ({
+                                                        children,
+                                                        defaultOpen,
+                                                        allowMultiple = false,
+                                                        className = "",
+                                                    }) => {
     const [activeItems, setActiveItems] = useState<string[]>(
         defaultOpen ? [defaultOpen] : []
     );
@@ -63,7 +66,11 @@ interface AccordionItemProps {
     className?: string;
 }
 
-export const AccordionItem: React.FC<AccordionItemProps> = ({ id, children,  className = "",  }) => {
+export const AccordionItem: React.FC<AccordionItemProps> = ({
+                                                                id,
+                                                                children,
+                                                                className = "",
+                                                            }) => {
     return (
         <div className={`overflow-hidden border-b border-gray-200 ${className}`}>
             {children}
@@ -79,8 +86,13 @@ interface AccordionHeaderProps {
     iconPosition?: "left" | "right";
 }
 
-export const AccordionHeader: React.FC<AccordionHeaderProps> = ({ itemId, children, className = "", icon, iconPosition = "right",
-  }) => {
+export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
+                                                                    itemId,
+                                                                    children,
+                                                                    className = "",
+                                                                    icon,
+                                                                    iconPosition = "right",
+                                                                }) => {
     const { toggleItem, isItemActive } = useAccordion();
     const isActive = isItemActive(itemId);
 
@@ -132,7 +144,11 @@ interface AccordionContentProps {
     className?: string;
 }
 
-export const AccordionContent: React.FC<AccordionContentProps> = ({itemId,children,className = "", }) => {
+export const AccordionContent: React.FC<AccordionContentProps> = ({
+                                                                      itemId,
+                                                                      children,
+                                                                      className = "",
+                                                                  }) => {
     const { isItemActive } = useAccordion();
     const isActive = isItemActive(itemId);
 
