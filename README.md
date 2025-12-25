@@ -19,7 +19,7 @@ Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Impl
 ## 🚀 Live Demo & Deployment
 
 🔗 **Live Application**  
-👉 [![Live Demo](https://img.shields.io/badge/🚀%20LIVE-Demo-success?style=for-the-badge)](https://resumemind-alpha.vercel.app/upload)
+👉 [![Live Demo](https://img.shields.io/badge/🚀%20LIVE-Demo-success?style=for-the-badge)](https://resumemind-alpha.vercel.app)
 
 
 ## 🖼️ Screenshots
