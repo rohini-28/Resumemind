@@ -94,7 +94,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/rohini-28/Resumemind.git
-cd resume-analyzer
+cd Resumind-resume-analyzer
 ```
 
 **Installation**
